@@ -62,7 +62,7 @@ img { max-width: 100%; display: block; }
 }
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-size: clamp(1.6rem, 4vw, 2.75rem);
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -494,7 +494,7 @@ img { max-width: 100%; display: block; }
 .page-header .container { position: relative; }
 .page-header h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   color: #fff;
@@ -915,10 +915,14 @@ img { max-width: 100%; display: block; }
 }
 @media (max-width: 600px) {
   .section { padding: 64px 0; }
-  .hero h1 { font-size: 2.8rem; }
+  .hero h1 { font-size: 1.9rem; letter-spacing: -0.02em; }
+  .page-header h1 { font-size: 1.8rem; }
+  .page-header { padding: calc(var(--nav-h) + 40px) 0 40px; }
+  .section-title { font-size: 1.5rem; }
   .stats-inner { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .contact-form { padding: 28px 22px; }
+  .about-values { grid-template-columns: 1fr 1fr; }
 }
 
 /* ── Support section blocks (single-column layout) ── */
