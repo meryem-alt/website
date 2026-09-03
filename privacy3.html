@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — PhotoFind</title>
-  <meta name="description" content="PhotoFind Privacy Policy. How we collect, use, and protect your information.">
+  <title>Privacy Policy — Deepsearch: AI People Finder</title>
+  <meta name="description" content="Deepsearch: AI People Finder Privacy Policy. How we collect, use, and protect your information.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -103,15 +103,15 @@
 
       <div class="legal-section">
         <p><strong>Effective Date:</strong> September 1, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> September 1, 2026</p>
-        <p>This Privacy Policy describes how AdMediaPixeel LLC ("we," "us," or "our") collects, uses, discloses, and protects your personal information when you use <strong>PhotoFind</strong> — our reverse image search mobile application — and related services (collectively, the "Services"). By accessing or using our Services, you acknowledge that you have read and understood this Privacy Policy.</p>
-        <p>AdMediaPixeel LLC is committed to protecting your privacy and handling your data in a transparent and responsible manner. This policy applies to all users of PhotoFind regardless of location.</p>
+        <p>This Privacy Policy describes how AdMediaPixeel LLC ("we," "us," or "our") collects, uses, discloses, and protects your personal information when you use <strong>Deepsearch: AI People Finder</strong> ("Deepsearch") — our reverse image search mobile application — and related services (collectively, the "Services"). By accessing or using our Services, you acknowledge that you have read and understood this Privacy Policy.</p>
+        <p>AdMediaPixeel LLC is committed to protecting your privacy and handling your data in a transparent and responsible manner. This policy applies to all users of Deepsearch regardless of location.</p>
       </div>
 
       <div class="legal-section">
-        <h2>1. About PhotoFind</h2>
-        <p>PhotoFind is a mobile application that allows users to perform reverse image searches on the publicly indexed web. Users select a photo from their device's photo library; that photo is securely transmitted to our backend service, which queries publicly indexed web content to find matching or similar images and webpages. Results are displayed within the app as links to external, publicly available web pages.</p>
+        <h2>1. About Deepsearch: AI People Finder</h2>
+        <p>Deepsearch is a mobile application that allows users to perform reverse image searches on the publicly indexed web. Users select a photo from their device's photo library; that photo is securely transmitted to our backend service, which uses the Google Cloud Vision API (Web Detection feature) to find matching or similar images and webpages across the publicly indexed web. Results are displayed within the app as links to external, publicly available web pages.</p>
         <div class="highlight-box">
-          <p><strong>Important:</strong> PhotoFind searches only publicly indexed web content. It is not a facial recognition tool and does not identify individuals. Your uploaded photo is used solely to execute your search request and is <strong>not stored permanently</strong> on our servers.</p>
+          <p><strong>Important:</strong> Despite its name, Deepsearch does not determine, confirm, or reveal anyone's identity. It searches only publicly indexed web content and shows you links to existing webpages where an uploaded photo already appears. It is not a facial recognition tool and does not itself identify individuals — any identification is something a user may infer for themselves by following the external links in the results, not a determination made by the app. Your uploaded photo is used solely to execute your search request and is <strong>not stored permanently</strong> on our servers.</p>
         </div>
       </div>
 
@@ -125,19 +125,20 @@
           <li><strong>Email address</strong> — used to authenticate your account, allow password reset, and manage your subscription.</li>
           <li><strong>User ID</strong> — a unique identifier assigned by Firebase Authentication to manage your account and search quota.</li>
         </ul>
-        <p>Account creation is not required to use PhotoFind. Guest users may use the app and access limited features without providing any personal information.</p>
+        <p>Account creation is not required to use Deepsearch. Guest users may use the app and access limited features without providing any personal information.</p>
 
         <h3>2.2 Photos You Upload</h3>
         <p>When you initiate a reverse image search, the photo you select is transmitted from your device to our secure backend server for processing. Uploading a photo is always a voluntary, user-initiated action.</p>
         <ul>
           <li>Your photo is used solely to perform the search query you requested.</li>
+          <li>To perform the search, your photo is sent to the <strong>Google Cloud Vision API</strong> (Web Detection feature), which identifies visually similar images and webpages across the public web. Google processes this image on our behalf as our sub-processor and in accordance with its own data processing terms. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">View Google Privacy Policy →</a></li>
           <li>Photos are <strong>not stored permanently</strong> on our servers. They are held only for the duration necessary to process and return your search results.</li>
           <li>We do not perform facial recognition, extract biometric identifiers, build facial profiles, or analyze the identity of any individual in uploaded photos.</li>
           <li>Photos are never used for advertising, model training, user profiling, or any purpose other than completing your specific search request.</li>
         </ul>
 
         <h3>2.3 Subscription and Purchase Data</h3>
-        <p>PhotoFind uses RevenueCat to manage in-app subscriptions. RevenueCat collects and processes:</p>
+        <p>Deepsearch uses RevenueCat to manage in-app subscriptions. RevenueCat collects and processes:</p>
         <ul>
           <li>Your subscription status and purchase history.</li>
           <li>Your User ID (linked to your Firebase account) to associate the subscription with your account.</li>
@@ -151,10 +152,17 @@
           <li>IP address and request timestamps (for security, rate-limiting, and abuse prevention).</li>
           <li>Device type and operating system version (for compatibility and debugging purposes).</li>
         </ul>
-        <p>We do not use any third-party analytics SDKs (such as Firebase Analytics or Mixpanel) and do not collect behavioral usage data or crash reports through automated third-party tools.</p>
+        <p>We also use <strong>Firebase Analytics</strong> (a Google LLC service) to understand how users interact with Deepsearch. Firebase Analytics may collect information such as:</p>
+        <ul>
+          <li>App usage events (e.g., screens viewed, features used, search actions taken).</li>
+          <li>Session duration and frequency of app opens.</li>
+          <li>General device and app information (device model, operating system, app version, language settings, and an anonymous, non-persistent installation identifier).</li>
+          <li>Approximate location derived from IP address (e.g., country or city level), not precise GPS location.</li>
+        </ul>
+        <p>Firebase Analytics data is used only to help us understand feature usage and improve the app — it is not used to identify you personally, and we do not use it for advertising or sell it to third parties. We do not use any other third-party analytics SDKs (such as Mixpanel) at this time. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">View Firebase Privacy Policy →</a></p>
 
         <h3>2.5 Search History</h3>
-        <p>PhotoFind stores your search history <strong>locally on your device only</strong> using your device's local storage. This data is never transmitted to our servers and is not accessible by us.</p>
+        <p>Deepsearch stores your search history <strong>locally on your device only</strong> using your device's local storage. This data is never transmitted to our servers and is not accessible by us.</p>
       </div>
 
       <div class="legal-section">
@@ -165,19 +173,21 @@
           <li><strong>Subscription Management:</strong> To verify your subscription status and unlock Pro features via RevenueCat.</li>
           <li><strong>Security &amp; Fraud Prevention:</strong> To detect and prevent abuse, enforce rate limits, and protect the integrity of the service.</li>
           <li><strong>Legal Compliance:</strong> To comply with applicable legal obligations and enforce our Terms of Service.</li>
+          <li><strong>App Analytics &amp; Improvement:</strong> To understand how users interact with Deepsearch (via Firebase Analytics) so we can identify popular features, fix issues, and improve the app experience.</li>
         </ul>
-        <p>We do not use your information for advertising, marketing campaigns, behavioral analytics, or the sale of data to third parties.</p>
+        <p>We do not use your information for advertising, do not sell it to third parties, and do not use your uploaded photos for analytics of any kind. Our use of app-interaction analytics (described in Section 2.4) is limited to understanding and improving the product.</p>
       </div>
 
       <div class="legal-section">
         <h2>4. Third-Party Services</h2>
-        <p>PhotoFind integrates the following third-party services:</p>
+        <p>Deepsearch integrates the following third-party services:</p>
         <ul>
           <li><strong>Firebase Authentication (Google LLC):</strong> Used for secure account creation, sign-in (including Google and Apple sign-in), and session management. Firebase may collect your email, name, and a unique User ID. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">View Firebase Privacy Policy →</a></li>
           <li><strong>RevenueCat, Inc.:</strong> Used to manage in-app subscriptions, validate purchases, and restore entitlements. RevenueCat collects purchase history, subscription status, User ID, and device identifiers. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">View RevenueCat Privacy Policy →</a></li>
           <li><strong>Apple App Store / Sign in with Apple:</strong> Used for in-app purchases, subscription billing, and Apple-based sign-in. Apple's privacy practices are governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple's Privacy Policy →</a></li>
           <li><strong>Google Sign-In (Google LLC):</strong> An optional sign-in method. When used, Google may share your name and email with us for account creation. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">View Google Privacy Policy →</a></li>
-          <li><strong>Our Backend Search Service:</strong> Your uploaded photo is transmitted to our secure backend, which queries publicly indexed web content via image search APIs. The photo is not permanently stored after the search is completed.</li>
+          <li><strong>Google Cloud Vision API (Google LLC):</strong> Powers the core reverse image search feature. Your uploaded photo is sent to this API's Web Detection feature to find visually similar images and matching web pages. Google processes this data on our behalf and does not retain it beyond what is needed to fulfill the request. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">View Google Privacy Policy →</a></li>
+          <li><strong>Firebase Analytics (Google LLC):</strong> Used to understand app usage and improve Deepsearch, as described in Section 2.4. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">View Firebase Privacy Policy →</a></li>
         </ul>
       </div>
 
@@ -185,7 +195,7 @@
         <h2>5. Data Sharing and Disclosure</h2>
         <p>We do not sell your personal information. We may share your information only in the following limited circumstances:</p>
         <ul>
-          <li><strong>Service Providers:</strong> With RevenueCat and Firebase, solely to operate the subscription and authentication features of PhotoFind.</li>
+          <li><strong>Service Providers:</strong> With RevenueCat and Firebase, solely to operate the subscription and authentication features of Deepsearch.</li>
           <li><strong>Legal Requirements:</strong> When required by law, regulation, court order, or governmental request.</li>
           <li><strong>Protection of Rights:</strong> To protect the rights, property, or safety of AdMediaPixeel LLC, our users, or the public.</li>
           <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of company assets, with appropriate notice to users.</li>
@@ -199,6 +209,7 @@
           <li><strong>Account data (name, email, User ID):</strong> Retained for as long as your account exists. Deleted upon account deletion request.</li>
           <li><strong>Purchase and subscription data:</strong> Retained by RevenueCat in accordance with their retention policy and applicable law.</li>
           <li><strong>Server logs (IP, timestamps):</strong> Retained for up to 90 days for security and abuse prevention purposes, then automatically deleted.</li>
+          <li><strong>Firebase Analytics data:</strong> Retained in accordance with Google's default Firebase Analytics retention settings, in aggregated or pseudonymous form for app-improvement purposes.</li>
           <li><strong>Search history:</strong> Stored locally on your device only. Deleted when you clear app data or uninstall the app.</li>
         </ul>
       </div>
@@ -229,7 +240,7 @@
 
       <div class="legal-section">
         <h2>9. Children's Privacy</h2>
-        <p>PhotoFind is not directed to children under the age of 13. We do not knowingly collect personal information from children. If we become aware that we have inadvertently collected information from a child under 13, we will take steps to delete it promptly. If you believe a child has provided us with personal information, please contact us at <a href="mailto:support@admediapixel.com">support@admediapixel.com</a>.</p>
+        <p>Deepsearch is not directed to children under the age of 13. We do not knowingly collect personal information from children. If we become aware that we have inadvertently collected information from a child under 13, we will take steps to delete it promptly. If you believe a child has provided us with personal information, please contact us at <a href="mailto:support@admediapixel.com">support@admediapixel.com</a>.</p>
       </div>
 
       <div class="legal-section">
@@ -280,8 +291,8 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="logo" href="#">
-            <span class="logo-mark">P</span>
-            PhotoFind
+            <span class="logo-mark">D</span>
+            Deepsearch
           </a>
           <p>Reverse image search for the publicly indexed web. A product of AdMediaPixeel LLC, based in Sheridan, Wyoming, USA.</p>
         </div>
